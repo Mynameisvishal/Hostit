@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 0 40px;
+}
+nav .nav-1
+{
+    display: flex;
+    justify-content: space-between;
+    height: 31.97px;
+}
+.nav-11
+{
+    display: flex;
+}
+nav .nav-1 a
+{
+    text-decoration: none;
+    color: white;
+}
+nav .nav-1 p
+{
+    height: 31.97px;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: cursive;
+    text-shadow: 2px 2px 2px white;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+nav .nav-1 img
+{
+    background: black;    
+    width: 32px;
+    height: 31.97px;
+}
+nav .nav-2
+{
+    display: flex;
+}
+nav .nav-2 a
+{
+   text-decoration: none;
+   color: white;
+   padding: 0 6px;
+   border: 1px solid black;
+   margin-left: 10px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   line-height: 32px;
+}
+/* nav .nav-2 a:hover
+{
+    display: block;
+    background: #39ceff;
+} */
+nav .nav-2 .bggreen
+{
+    background-color: green;
+}
+nav .nav-2 .bggreen:hover
+{
+    background-color: #13c313;
+}
+nav .nav-2 .bgred
+{
+    background-color: #f23a3a;
+    padding-right: 2px;
+}
+nav .nav-2 .bgred:hover
+{
+    background-color: #f00b0b;
+}
+.nav-1 button
+{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: black;
+}
+.form-logout input[type="submit"]
+{
+    color: white;
+    padding: 0 6px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background: red;
+    line-height: 31.97px;
+}
+#min-bar
+{
+    display: none;
+    position: relative;
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 0 6px;
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    line-height: 32px;
+ 
+}
+ @media (max-width:730px)
+{
+    #min-bar
+    {
+        display: block;
+    }
+    nav
+    {
+        display: block;
+        
+    }
+    nav .nav-2
+    {
+        display: none;      
+        flex-direction: column;
+        flex-wrap: wrap;
+    }   
+    nav .nav-2 a
+    {
+        width: 100%;
+        background: #201d1d;      
+    }
+    nav .nav-2 a:hover
+    {
+        background: #373030;      
+    }
+    nav .nav-2 .bggreen
+    {
+        background-color: #201d1d;
+    }
+    nav .nav-2 .bggreen:hover
+    {
+        background-color: #373030;
+    }
+    nav .nav-2 .bgred
+    {
+        background-color: #201d1d;
+        padding-right: 2px;
+    }
+    nav .nav-2 .bgred:hover
+    {
+        background-color: #373030;
+    }
+   
+} 

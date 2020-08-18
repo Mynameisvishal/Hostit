@@ -1,0 +1,319 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-1
+{
+    position: relative;
+}
+.main-1 .titleimage img
+{
+    width: 100%;
+    height: 500px;
+}   
+.main-1  .overlap 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: url(img/codicon.png);
+    background-size: cover;
+    width: 25%;
+    height: 250px;
+}
+.cookie-container
+{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #111111;
+    color: white;
+    padding: 0 32;
+    transition: 0.5s;
+    z-index: 100000;
+}
+.cookie-container.active{
+    bottom: 0;
+}
+.cookie-btn
+{
+    background-color: #e64118;
+    border: 0;
+    color: #f5f6fa;
+    font-size: 18px;
+    margin-bottom:16px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 4px 6px;
+}
+.main-2
+{
+    background: #beb6b6;
+    /* background: url(img/pspubg.jpg) no-repeat;
+    background-size: cover; */
+    margin: 0;
+    padding: 0;
+}
+.main-2 .header-tabs
+{
+    margin: 10px 20px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+.main-2 .header-tabs button
+{
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 3px 6px;
+    border: 1.5px solid #c8c8c8;
+    cursor: pointer;
+    background: #9e9e9e;
+    color: #fff;
+    box-shadow: 2px 2px 2px #9e9e9e;
+}
+.main-2 .header-tabs button:hover
+{
+    transform: scale(1.5);
+    transition: transform .5s;
+}
+.main-2 .upcomming-sub
+{
+    margin: 0;
+    position: relative;
+    /* border: 2px solid #fff; */
+}
+.main-2 .current-sub,.main-2 .previous-sub
+{
+    display: none;
+}
+.main-2 .upcomming-sub .box,.main-2 .current-sub .box,.main-2 .previous-sub .box
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    
+}
+.main-2 .upcomming-sub .box .row1,.main-2 .upcomming-sub .box .row2,.main-2 .upcomming-sub .box .row3,
+.main-2 .current-sub .box .row1,.main-2 .previous-sub .box .row1
+{
+    padding: 8px 0;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.main-2 .upcomming-sub .box .row1 .col1,.main-2 .upcomming-sub .box .row1 .col2,
+.main-2 .current-sub .box .row1 .col1,.main-2 .current-sub .box .row1 .col2,
+.main-2 .previous-sub .box .row1 .col1,.main-2 .previous-sub .box .row1 .col2,
+.main-2 .upcomming-sub .box .row2 .col1,.main-2 .upcomming-sub .box .row2 .col2,
+.main-2 .upcomming-sub .box .row3 .col1,.main-2 .upcomming-sub .box .row3 .col2
+{
+    width: 50%;
+    position: relative;
+    display: flex;
+    border: 1.5px solid black;
+    padding: 20px 30px;
+    /* background: #c8c8c8; */
+    background: #9e9e9e;
+    margin: 0 8px;
+}
+.main-2 .upcomming-sub .box .img img,.main-2 .current-sub .box .img img,.main-2 .previous-sub .box .img img
+{
+    width: 150px;
+    height: 150px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    margin: auto 0;
+    box-shadow: 0 2px 2px black,2px 0 4px black;
+}
+.main-2 .upcomming-sub .box .img,.main-2 .current-sub .box .img,.main-2 .previous-sub .box .img 
+{
+    margin: auto 0;
+}
+/* .main-2 .upcomming-sub .box .row1 .col2 .img img,.main-2 .upcomming-sub .box .row2 .col2 .img img
+{
+    padding: 10px;
+    padding-top: 20px;
+} */
+.main-2 .upcomming-sub .box .row1 .col1 .topfloat,.main-2 .upcomming-sub .box .row1 .col2 .topfloat,
+.main-2 .current-sub .box .row1 .col1 .topfloat,.main-2 .current-sub .box .row1 .col2 .topfloat,
+.main-2 .previous-sub .box .row1 .col1 .topfloat,.main-2 .previous-sub .box .row1 .col2 .topfloat,
+.main-2 .upcomming-sub .box .row2 .col1 .topfloat,.main-2 .upcomming-sub .box .row2 .col2 .topfloat,
+.main-2 .upcomming-sub .box .row3 .col1 .topfloat,.main-2 .upcomming-sub .box .row3 .col2 .topfloat
+{
+    position: absolute;
+    font-size: 28px;
+    top: 0;
+    right: 0;
+    /* border: 1.5px solid black ; */
+    border-radius: 50%;
+    background: #9e9e9e;
+    /* color: #fff; */
+    padding: 4px 0;
+    width: 10%;
+    text-align: center;
+}
+.main-2 .upcomming-sub .box .row1 .col1 .join,.main-2 .upcomming-sub .box .row1 .col2 .join,
+.main-2 .upcomming-sub .box .row2 .col1 .join,.main-2 .upcomming-sub .box .row2 .col2 .join,
+.main-2 .upcomming-sub .box .row3 .col1 .join,.main-2 .upcomming-sub .box .row3 .col2 .join
+{
+    position: absolute;
+    font-size: 22px;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    border-top: 1.5px solid black;
+    border-left: 1.5px solid black;
+    border-bottom: none;
+    border-right: none;
+    padding: 4px 0;
+    width: 20%;
+    background-color: green;
+    color: #fff;
+    text-align: center;  
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+.main-2 .current-sub .box .row1 .col1 .view,.main-2 .current-sub .box .row1 .col2 .view,
+.main-2 .previous-sub .box .row1 .col1 .view,.main-2 .previous-sub .box .row1 .col2 .view
+{
+    position: absolute;
+    font-size: 22px;
+    bottom: 0;
+    right: 0;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    background: #4c95c2;
+    color: #fff;
+    padding: 2px 4px;
+    border-top: 1.5px solid black;
+    border-left: 1.5px solid black;
+}
+.main-2 .upcomming-sub .box .row1 .col1 .content,.main-2 .upcomming-sub .box .row1 .col2 .content,
+.main-2 .current-sub .box .row1 .col1 .content,.main-2 .current-sub .box .row1 .col2 .content,
+.main-2 .previous-sub .box .row1 .col1 .content,.main-2 .previous-sub .box .row1 .col2 .content,
+.main-2 .upcomming-sub .box .row2 .col1 .content,.main-2 .upcomming-sub .box .row2 .col2 .content,
+.main-2 .upcomming-sub .box .row3 .col1 .content,.main-2 .upcomming-sub .box .row3 .col2 .content
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+.main-2 .upcomming-sub .box .content .bold1,.main-2 .current-sub .box .content .bold1,.main-2 .previous-sub .box .content .bold1
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+.main-2 .upcomming-sub .box .content .normal1,.main-2 .current-sub .box .content .normal1,.main-2 .previous-sub .box .content .normal1
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+.main-2 .upcomming-sub .box .content p,.main-2 .current-sub .box .content p,.main-2 .previous-sub .box .content p
+{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main-2 .upcomming-sub .box .row1 .col1 .content p,.main-2 .upcomming-sub .box .row2 .col1 .content p,
+.main-2 .current-sub .box .row1 .col1 .content p,.main-2 .previous-sub .box .row1 .col1 .content p
+{
+    font-size: 28px;
+    font-weight: 650;
+}
+.main-3
+{
+    width: 100%;
+    height: 599px;
+    padding: 30px;
+    background-color: #a29696;
+}
+.main-3 .feedback
+{
+    position: relative;
+    background: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-3 .feedback p
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.main-3 .feedback .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.feedback .inputBox input,.feedback .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 2px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.feedback .inputBox span
+{
+    position: absolute;
+    left: 10px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+.feedback .inputBox input:focus ~span,
+.feedback .inputBox input:valid ~span,
+.feedback .inputBox textarea:focus ~span,
+.feedback .inputBox textarea:valid ~span
+{
+    /* color: #e91e63; */
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.feedback .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.signuperror
+{
+    color: red;  
+    font-size: smaller;
+}
+.feedback .delivered
+{
+    color: green;  
+    font-size: smaller;
+}

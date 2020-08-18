@@ -1,0 +1,135 @@
+footer
+{
+    background: #302c2c;
+    margin-top: 49  px; 
+    
+}
+.logowithname
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    width: 100%;
+}
+.logowithname p
+{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    color: white;
+    padding: 0 10px;
+}
+.footer-nav
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    color: white;
+}
+.footer-nav a
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    padding: 0 15px;
+}
+ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px ;
+}
+ ul li
+{
+    list-style: none;
+    
+}
+ul li a
+{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    
+    border: 3px solid #fff;
+    z-index: 3;
+}
+ul li a .fa
+{
+    position: relative;
+    color: white;
+    transition:.5s;
+} 
+
+ul li a:hover .fa
+{
+    color: #fff;
+    transform: rotateY(360deg);
+}
+ul li:nth-child(1) a
+{
+    background:#3b5999;
+}
+ul li:nth-child(2) a
+{
+    background:#55acee;
+}
+ul li:nth-child(3) a
+{
+    background:#dd4b39;
+}
+ul li:nth-child(4) a
+{
+    background:#0077b5;
+}
+ul li:nth-child(5) a
+{
+    background:#c4405f;
+}
+@media (max-width:679px)
+{
+    .footer-nav a
+    {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    ul li a
+    {
+        width: 50px;
+        height: 50px;    
+        line-height: 50px;
+        font-size: 22px;
+    }   
+}
+/* @media (max-width:479px)
+{
+    .footer-nav a
+    {
+        font-size: 14px;
+        padding: 0 6px;
+    }
+    ul li a
+    {
+        width: 40px;
+        height: 40px;    
+        line-height: 40px;
+        font-size: 18px;
+    }
+    ul li:nth-child(4) a
+    {
+        display: none;
+    }   
+} */

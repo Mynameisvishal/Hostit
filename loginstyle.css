@@ -1,0 +1,196 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section 
+{
+    width: 35%;
+    height: 699px;
+    margin: 20px auto;
+}
+.section-inside
+{
+    border: 1.5px solid #dbdbdb;
+
+}
+section form
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--d87,255,255,255),1);
+    
+    /* border: 1px solid rgba(var(--b6a,219,219,219),1); */
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+section form h2
+{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-style:italic;
+    margin: 20px auto;    
+}
+section form input[type="text"],section form input[type="password"]
+{
+    width: 75%;
+    padding: 0 4px;
+    margin: 5px auto;  
+   
+    color: #262626;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+}
+section form input[type="text"]:focus,section form input[type="password"]:focus
+{
+    width: 75%;
+    padding: 0 4px;
+    margin: 5px auto;  
+    outline: none;
+    color: #262626;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+}
+section form input[type="submit"]
+{
+    width: 75%;
+    height: 25px;
+    text-align: center;
+    color: white;
+    background: #306c80;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 25px 0;
+    text-shadow: none;
+    outline: none;
+    border: 1px thin white;
+}
+.inbetween
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.inbetween hr
+{
+    width: 25%;
+    height: 1px;
+    line-height: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+.inbetween p
+{
+    font-size: 18px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.loginwithfb
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.loginwithfb a
+{
+    text-decoration: none;
+    font-size: 16px;
+    color: #385185;
+    margin-bottom: 15px;
+}
+.loginwithfb i
+{
+    background: #3b5999;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    color: white;   
+}
+.section-bottom
+{
+    margin: 20px auto;
+    border: 1.5px solid #dbdbdb;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+}
+.section-footer
+{
+    text-align: center;
+}
+.section-footer a
+{
+    text-decoration: none;
+}
+.section-footer p
+{
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 0;
+}
+.section-footer img
+{
+    width: 70%;
+    height: 70px;
+    text-align: center;
+}
+/* background-color: rgba(var(--d87,255,255,255),1);
+    border: 1px  solid #dbdbdb;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+} */
+/* #react-root, article, div, footer, header, main, nav, section {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+} */
+@media (max-width:979px)
+{
+       section{
+           width: 50%;
+       }
+}
+@media (max-width:679px)
+{
+       section{
+           width: 75%;
+       }
+}
+@media (max-width:379px)
+{
+       section{
+           width: 100%;
+       }
+}
